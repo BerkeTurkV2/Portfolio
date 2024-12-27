@@ -32,6 +32,7 @@
     bottom: 0px;
     border: 100px dashed #00995e;
     border-radius: 50%;
+    animation: spin-slow 50s linear infinite;
 }
 .rotating-border-second {
     position: absolute;
@@ -41,7 +42,7 @@
     bottom: -10px;
     border: 4px dashed #00995e;
     border-radius: 50%;
-    animation: spin-slow 40s linear infinite;
+    animation: spin-slow-reverse 40s linear infinite;
 }
 
 .profile-image {
