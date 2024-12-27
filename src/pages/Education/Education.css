@@ -3,3 +3,9 @@ h4:hover {
     transition: transform 0.3s ease;
 }
 
+.content {
+    padding: 20px;
+    background: #1a1a1a;
+    border-radius: 8px;
+    position: relative;
+}

@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaGithub, FaLinkedin, FaInstagram, FaReact, FaNodeJs, FaGit, FaJava } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaInstagram, FaReact, FaNodeJs, FaJava } from 'react-icons/fa';
 import { SiJavascript, SiMysql, SiSupabase, SiBootstrap, SiFlutter, SiDart, SiPostgresql, SiFirebase, SiTailwindcss, SiRedux  } from 'react-icons/si';
 import './Home.css';
 
@@ -77,10 +77,6 @@ function Home() {
                                     <span>JavaScript</span>
                                 </div>
                                 <div className="skill-icon">
-                                    <FaGit size={20} title="Git" />
-                                    <span>Git</span>
-                                </div>
-                                <div className="skill-icon">
                                     <SiMysql size={20} title="MySQL" />
                                     <span>MySQL</span>
                                 </div>
@@ -108,10 +104,6 @@ function Home() {
                                 <div className="skill-icon">
                                     <SiRedux size={20} title="Redux" />
                                     <span>Redux</span>
-                                </div>
-                                <div className="skill-icon">
-                                    <SiPostgresql size={20} title="PostgreSQL" />
-                                    <span>PostgreSQL</span>
                                 </div>
                                 <div className="skill-icon">
                                     <SiFirebase size={20} title="Firebase" />

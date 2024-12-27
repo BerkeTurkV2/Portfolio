@@ -10,12 +10,9 @@ function Navbar() {
                 <div className="d-flex align-items-center gap-4">
                     <a href="/" className="nav-link fs-5 fw-bold" style={{ color: '#00995e' }}>Home</a>
                     <a href="/Education" className="nav-link text-white fs-5 fw-bold">Education</a>
-                    <a href="/Works" className="nav-link text-white fs-5 fw-bold">Works</a>
+                    <a href="/Experiences" className="nav-link text-white fs-5 fw-bold">Experiences</a>
                     <a href="/Projects" className="nav-link text-white fs-5 fw-bold">Projects</a>
                     <a href="/Contact" className="nav-link text-white fs-5 fw-bold">Contact</a>
-                    <button className="btn rounded-pill px-3 fs-5" style={{ backgroundColor: '#00995e', color: 'black' }}>
-                        Write me
-                    </button>
                 </div>
             </div>
         </nav>

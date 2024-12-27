@@ -40,7 +40,7 @@
     left: -10px;
     right: -10px;
     bottom: -10px;
-    border: 4px dashed #00995e;
+    border: 2px dashed #00995e;
     border-radius: 50%;
     animation: spin-slow-reverse 40s linear infinite;
 }
