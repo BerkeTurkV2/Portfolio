@@ -4,17 +4,17 @@ function Navbar() {
     return (
         <nav className="navbar navbar-expand-lg py-3">
             <div className="container">
-                <a className="navbar-brand fs-3 fw-bold text-white" href="/">
-                    Berke<span style={{ color: '#00ff9d' }}>.</span>
+                <a className="navbar-brand" href="/">
+                    <img className="rounded-circle bg-dark" src="/b2.png" alt="Logo" style={{ width: '100px', height: '100px' }} />
                 </a>
                 <div className="d-flex align-items-center gap-4">
-                    <a href="/" className="nav-link" style={{ color: '#00ff9d' }}>Home</a>
-                    <a href="/Education" className="nav-link text-white">Education</a>
-                    <a href="/resume" className="nav-link text-white">Resume</a>
-                    <a href="/work" className="nav-link text-white">Work</a>
-                    <a href="/contact" className="nav-link text-white">Contact</a>
-                    <button className="btn rounded-pill px-4" style={{ backgroundColor: '#00ff9d', color: 'black' }}>
-                        Hire me
+                    <a href="/" className="nav-link fs-5 fw-bold" style={{ color: '#00995e' }}>Home</a>
+                    <a href="/Education" className="nav-link text-white fs-5 fw-bold">Education</a>
+                    <a href="/Works" className="nav-link text-white fs-5 fw-bold">Works</a>
+                    <a href="/Projects" className="nav-link text-white fs-5 fw-bold">Projects</a>
+                    <a href="/Contact" className="nav-link text-white fs-5 fw-bold">Contact</a>
+                    <button className="btn rounded-pill px-3 fs-5" style={{ backgroundColor: '#00995e', color: 'black' }}>
+                        Write me
                     </button>
                 </div>
             </div>
