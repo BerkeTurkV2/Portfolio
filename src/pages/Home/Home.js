@@ -1,6 +1,6 @@
 import React from 'react';
 import { FaGithub, FaLinkedin, FaInstagram, FaReact, FaNodeJs, FaJava } from 'react-icons/fa';
-import { SiJavascript, SiMysql, SiSupabase, SiBootstrap, SiFlutter, SiDart, SiPostgresql, SiFirebase, SiTailwindcss, SiRedux  } from 'react-icons/si';
+import { SiJavascript, SiMysql, SiSupabase, SiBootstrap, SiFlutter, SiDart, SiFirebase, SiTailwindcss, SiRedux  } from 'react-icons/si';
 import './Home.css';
 
 import Navbar from '../../components/Navbar';
@@ -12,7 +12,7 @@ function Home() {
             <div className="container py-5">
                 <div className="row">
                     <div className="col-lg-6 align-self-center">
-                        <p className="fs-4 mb-2">Computer Engineer & Software Developer</p>
+                        <p className="fs-4 fw-bold mb-2">Computer Engineer & Software Developer</p>
                         <h1 className="display-3 fw-bold text-secondary mb-4">
                             Hello I'm{' '}
                             <span style={{ color: '#00995e' }}>Berke Türk</span>
@@ -57,64 +57,64 @@ function Home() {
                     </div>
 
                     <div className='row mt-5'>
-                        <div className="col-lg-6 mt-5">
+                        <div className="col-lg-7 mt-5">
                             <h5 className="mb-3 text-secondary">Main Skills:</h5>
                             <div className="d-flex gap-4 flex-wrap">
                                 <div className="skill-icon">
-                                    <FaReact size={20} title="React" />
+                                    <FaReact size={24} title="React" />
                                     <span>React</span>
                                 </div>
                                 <div className="skill-icon">
-                                    <FaReact size={20} title="React Native" />
+                                    <FaReact size={24} title="React Native" />
                                     <span>React Native</span>
                                 </div>
                                 <div className="skill-icon">
-                                    <FaNodeJs size={20} title="Node.js" />
+                                    <FaNodeJs size={24} title="Node.js" />
                                     <span>Node.js</span>
                                 </div>
                                 <div className="skill-icon">
-                                    <SiJavascript size={20} title="JavaScript" />
+                                    <SiJavascript size={24} title="JavaScript" />
                                     <span>JavaScript</span>
                                 </div>
                                 <div className="skill-icon">
-                                    <SiMysql size={20} title="MySQL" />
+                                    <SiMysql size={24} title="MySQL" />
                                     <span>MySQL</span>
                                 </div>
                                 <div className="skill-icon">
-                                    <SiSupabase size={20} title="Supabase" />
+                                    <SiSupabase size={24} title="Supabase" />
                                     <span>Supabase</span>
                                 </div>
                                 <div className="skill-icon">
-                                    <SiBootstrap size={20} title="Bootstrap" />
+                                    <SiBootstrap size={24} title="Bootstrap" />
                                     <span>Bootstrap</span>
                                 </div>
                             </div>
                         </div>
-                        <div className='col-lg-6 mt-5' >
+                        <div className='col-lg-5 mt-5' >
                             <h5 className="mb-3 text-secondary">Additional Skills:</h5>
                             <div className="d-flex gap-4 flex-wrap">
                                 <div className="skill-icon">
-                                    <SiFlutter size={20} title="Flutter" />
+                                    <SiFlutter size={24} title="Flutter" />
                                     <span>Flutter</span>
                                 </div>
                                 <div className="skill-icon">
-                                    <SiDart size={20} title="Dart" />
+                                    <SiDart size={24} title="Dart" />
                                     <span>Dart</span>
                                 </div>
                                 <div className="skill-icon">
-                                    <SiRedux size={20} title="Redux" />
+                                    <SiRedux size={24} title="Redux" />
                                     <span>Redux</span>
                                 </div>
                                 <div className="skill-icon">
-                                    <SiFirebase size={20} title="Firebase" />
+                                    <SiFirebase size={24} title="Firebase" />
                                     <span>Firebase</span>
                                 </div>
                                 <div className="skill-icon">
-                                    <SiTailwindcss size={20} title="Tailwind" />
+                                    <SiTailwindcss size={24} title="Tailwind" />
                                     <span>Tailwind</span>
                                 </div>
                                 <div className="skill-icon">
-                                    <FaJava size={20} title="Java" />
+                                    <FaJava size={24} title="Java" />
                                     <span>Java</span>
                                 </div>
                             </div>
