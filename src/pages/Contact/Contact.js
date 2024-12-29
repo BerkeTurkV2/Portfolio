@@ -24,7 +24,7 @@ function Contact() {
                 throw new Error('Please enter a valid phone number');
             }
 
-            const response = await fetch("https://formspree.io/f/xovvwgrv", {
+            const response = await fetch(process.env.REACT_APP_FORM_ENDPOINT, {
                 method: 'POST',
                 body: formData,
                 headers: {
