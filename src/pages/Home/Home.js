@@ -1,6 +1,6 @@
 import React from 'react';
 import { FaGithub, FaLinkedin, FaInstagram, FaReact, FaNodeJs, FaJava } from 'react-icons/fa';
-import { SiJavascript, SiMysql, SiSupabase, SiBootstrap, SiFlutter, SiDart, SiFirebase, SiTailwindcss, SiRedux  } from 'react-icons/si';
+import { SiJavascript, SiMysql, SiSupabase, SiBootstrap, SiFlutter, SiDart, SiFirebase, SiTailwindcss, SiRedux } from 'react-icons/si';
 import './Home.css';
 
 import Navbar from '../../components/Navbar';
@@ -18,7 +18,7 @@ function Home() {
                             <span style={{ color: '#00995e' }}>Berke Türk</span>
                         </h1>
                         <p className="text-white mb-5 fs-5">
-                            "Currently, I am working with React Native and React while expanding my expertise by learning Node.js and .NET Core."
+                            "I am working with React Native and React, currently focusing on expanding my expertise by learning Node.js and .NET Core."
                         </p>
 
                         <div className="d-flex gap-4 mb-5">
