@@ -46,7 +46,7 @@ function Contact() {
                     </div>
 
                     {/* Sol Taraf - İletişim Formu */}
-                    <div className='col-lg-6 my-form-bg-color p-4 rounded-3 order-lg-1'>
+                    <div className='col-lg-6 my-card-bg-color px-5 py-4 rounded-3 order-lg-1 mt-1'>
                         <h2 className='my-text-color mb-4'>Send me a message</h2>
                         <p className='text-white mb-5'>
                             You can contact me here for projects or job offers, or reach me through the phone number or email provided.
@@ -58,6 +58,7 @@ function Contact() {
                                         type='text'
                                         className='form-control bg-secondary border-0 text-white py-3'
                                         placeholder='Firstname'
+                                        required
                                     />
                                 </div>
                                 <div className='col-md-6'>
@@ -65,6 +66,7 @@ function Contact() {
                                         type='text'
                                         className='form-control bg-secondary border-0 text-white py-3'
                                         placeholder='Lastname'
+                                        required
                                     />
                                 </div>
                             </div>
@@ -74,6 +76,7 @@ function Contact() {
                                         type='email'
                                         className='form-control bg-secondary border-0 text-white py-3'
                                         placeholder='Email address'
+                                        required
                                     />
                                 </div>
                                 <div className='col-md-6'>
@@ -81,6 +84,7 @@ function Contact() {
                                         type='tel'
                                         className='form-control bg-secondary border-0 text-white py-3'
                                         placeholder='Phone number'
+                                        required
                                     />
                                 </div>
                             </div>
@@ -89,6 +93,7 @@ function Contact() {
                                     type='text'
                                     className='form-control bg-secondary border-0 text-white py-3'
                                     placeholder='Company name'
+                                    required
                                 />
                             </div>
                             <div className='mb-4'>
@@ -96,6 +101,7 @@ function Contact() {
                                     className='form-control bg-secondary border-0 text-white py-3'
                                     rows='5'
                                     placeholder='Type your message here.'
+                                    required
                                 ></textarea>
                             </div>
                             <button type='submit' className='btn btn-success px-3 py-2'>

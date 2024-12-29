@@ -6,6 +6,17 @@
     color: #00995e;
 }
 
-.my-form-bg-color {
-    background-color: #373a3e;
+.my-card-bg-color {
+    background-color: #1a1a1a;
+}
+
+.text-with-border {
+    font-size: 4rem; 
+    font-weight: bold; 
+    color: white;
+    text-shadow: 
+      4px 4px 0 #00995e,  /* Sağ alt gölge */
+      -1px -1px 0 #00995e, /* Sol alt gölge */
+      -1px -1px 0 #00995e, /* Sağ üst gölge */
+      -1px -1px 0 #00995e; /* Sol üst gölge */
 }
