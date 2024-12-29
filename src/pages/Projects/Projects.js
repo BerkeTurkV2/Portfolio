@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import Navbar from '../../components/Navbar';
+import { FaGithub } from 'react-icons/fa';
+import { FaSquareArrowUpRight } from "react-icons/fa6";
 
 function Projects() {
     const [currentProject, setCurrentProject] = useState(0);
@@ -14,8 +16,8 @@ function Projects() {
             description4: "Teacher Panel: Teachers can organize their schedules and manage student information and performance.",
             technologies: ["React", "Node.js", "Bootstrap", "MySQL"],
             image: "/project_images/p1.png",
-            demoLink: "#",
-            githubLink: "#"
+            demoUrl: "#",
+            sourceUrl: "#"
         },
         {
             number: "02",
@@ -23,8 +25,8 @@ function Projects() {
             description: "This project is the website you are currently visiting. The code is written following modern architectural principles. Components and content are designed to be customizable. Therefore, my code is publicly available. Anyone can download it, modify the content sections, and use it as their own portfolio website.",
             technologies: ["React", "Next.js", "Bootstrap"],
             image: "/project_images/p2.png",
-            demoLink: "#",
-            githubLink: "#"
+            demoUrl: "#",
+            sourceUrl: "#"
         },
         {
             number: "03",
@@ -32,8 +34,8 @@ function Projects() {
             description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.",
             technologies: ["React", "Node.js", "MongoDB"],
             image: "https://placehold.co/600x400",
-            demoLink: "#",
-            githubLink: "#"
+            demoUrl: "#",
+            sourceUrl: "#"
         },
         {
             number: "04",
@@ -41,8 +43,8 @@ function Projects() {
             description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.",
             technologies: ["React", "Firebase", "Bootstrap"],
             image: "https://placehold.co/600x400",
-            demoLink: "#",
-            githubLink: "#"
+            demoUrl: "#",
+            sourceUrl: "#"
         },
         {
             number: "05",
@@ -50,8 +52,8 @@ function Projects() {
             description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.",
             technologies: ["React", "Node.js", "MongoDB"],
             image: "https://placehold.co/600x400",
-            demoLink: "#",
-            githubLink: "#"
+            demoUrl: "#",
+            sourceUrl: "#"
         },
         {
             number: "06",
@@ -59,8 +61,8 @@ function Projects() {
             description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.",
             technologies: ["React", "Firebase", "Bootstrap"],
             image: "https://placehold.co/600x400",
-            demoLink: "#",
-            githubLink: "#"
+            demoUrl: "#",
+            sourceUrl: "#"
         },
         {
             number: "07",
@@ -68,8 +70,8 @@ function Projects() {
             description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.",
             technologies: ["React", "Firebase", "Bootstrap"],
             image: "https://placehold.co/600x400",
-            demoLink: "#",
-            githubLink: "#"
+            demoUrl: "#",
+            sourceUrl: "#"
         },
         {
             number: "08",
@@ -77,8 +79,8 @@ function Projects() {
             description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.",
             technologies: ["React", "Firebase", "Bootstrap"],
             image: "https://placehold.co/600x400",
-            demoLink: "#",
-            githubLink: "#"
+            demoUrl: "#",
+            sourceUrl: "#"
         },
         {
             number: "09",
@@ -86,8 +88,8 @@ function Projects() {
             description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.",
             technologies: ["React", "Firebase", "Bootstrap"],
             image: "https://placehold.co/600x400",
-            demoLink: "#",
-            githubLink: "#"
+            demoUrl: "#",
+            sourceUrl: "#"
         },
     ];
 
@@ -102,7 +104,7 @@ function Projects() {
     return (
         <div className='min-vh-100 bg-dark text-white'>
             <Navbar />
-            <div className='container py-5'>
+            <div className='container py-3 py-lg-5'>
                 <div className='row align-items-center'>
                     {/* Sol Taraf - Proje Bilgileri */}
                     <div className='col-lg-6 mb-4 mb-lg-0'>
@@ -119,12 +121,15 @@ function Projects() {
                                 ))}
                             </div>
                             <div className='border-bottom border-white mb-4'></div>
-                            <div className='d-flex gap-3'>
-                                <a href={projects[currentProject].demoLink} className='btn btn-outline-light'>
-                                    Demo'yu Görüntüle
+                            <div className="d-flex gap-3 mt-4">
+                                <a href={projects[currentProject].demoUrl} target="_blank" rel="noopener noreferrer" 
+                                   className="btn btn-outline-light rounded-circle p-2">
+                                    <FaSquareArrowUpRight  className="fs-3" />
                                 </a>
-                                <a href={projects[currentProject].githubLink} className='btn btn-outline-success'>
-                                    Kaynak Kodu
+                                <a href={projects[currentProject].sourceUrl} target="_blank" rel="noopener noreferrer" 
+                                   className="btn btn-outline-light rounded-circle p-2"
+                                   style={{ border: '1px solid #00995e' }}>
+                                    <FaGithub className="fs-3 my-text-color"/>
                                 </a>
                             </div>
                         </div>

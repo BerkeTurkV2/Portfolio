@@ -89,7 +89,7 @@ function Contact() {
                     }
                 `}
             </style>
-            <div className='container py-5'>
+            <div className='container py-3 py-lg-5'>
                 <div className='row'>
                     {/* Sağ Taraf - İletişim Bilgileri */}
                     <div className='col-lg-5 d-flex justify-content-center align-self-center order-lg-2 mb-5 mb-lg-0'>

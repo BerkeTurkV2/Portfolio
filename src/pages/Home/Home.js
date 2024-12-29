@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaGithub, FaLinkedin, FaInstagram, FaReact, FaNodeJs, FaJava } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaReact, FaNodeJs, FaJava } from 'react-icons/fa';
 import { SiJavascript, SiMysql, SiSupabase, SiBootstrap, SiFlutter, SiDart, SiFirebase, SiTailwindcss, SiRedux } from 'react-icons/si';
 import './Home.css';
 import '../../styles/variables.css';
@@ -12,36 +12,8 @@ function Home() {
             <Navbar />
             <div className="container py-5">
                 <div className="row">
-                    <div className="col-lg-6 align-self-center">
-                        <p className="fs-4 fw-bold mb-2">Computer Engineer & Software Developer</p>
-                        <h1 className="display-3 fw-bold text-secondary mb-4">
-                            Hello I'm{' '}
-                            <span style={{ color: '#00995e' }}>Berke Türk</span>
-                        </h1>
-                        <p className="text-white mb-5 fs-5">
-                            "I am working with React Native and React, currently focusing on expanding my expertise by learning Node.js and .NET Core."
-                        </p>
-
-                        <div className="d-flex gap-4 mb-5">
-                            <button className="btn btn-outline rounded-pill px-4 py-2 d-flex align-items-center gap-2"
-                                style={{ borderColor: '#00995e', color: '#00995e' }}>
-                                DOWNLOAD CV <span>↓</span>
-                            </button>
-                            <div className="d-flex gap-4 align-items-center">
-                                <a href="https://github.com" className="text-white fs-4 social-icon">
-                                    <FaGithub />
-                                </a>
-                                <a href="https://linkedin.com" className="text-white fs-4 social-icon">
-                                    <FaLinkedin />
-                                </a>
-                                <a href="https://instagram.com" className="text-white fs-4 social-icon">
-                                    <FaInstagram />
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className="col-lg-6 d-flex justify-content-center">
+                    {/* Profil Fotoğrafı - Mobilde en üstte */}
+                    <div className="col-lg-6 d-flex justify-content-center mb-5 mb-lg-0 order-1 order-lg-2">
                         <div className="position-relative">
                             <div className="profile-circle">
                                 <div className="rotating-border"></div>
@@ -57,7 +29,35 @@ function Home() {
                         </div>
                     </div>
 
-                    <div className='row mt-5'>
+                    {/* Yazı Kısmı - Mobilde ortada */}
+                    <div className="col-lg-6 align-self-center order-2 order-lg-1">
+                        <p className="fs-3 fw-bold mb-2">Computer Engineer & Software Developer</p>
+                        <h1 className="display-3 fw-bold text-secondary mb-4">
+                            Hello I'm{' '}
+                            <span style={{ color: '#00995e' }}>Berke Türk</span>
+                        </h1>
+                        <p className="text-white mb-5 fs-5">
+                            "I am working with React Native and React, currently focusing on expanding my expertise by learning Node.js and .NET Core."
+                        </p>
+
+                        <div className="d-flex gap-4 mb-3 mb-lg-5">
+                            <button className="btn btn-outline rounded-pill px-4 py-2 d-flex align-items-center gap-2"
+                                style={{ borderColor: '#00995e', color: '#00995e' }}>
+                                DOWNLOAD CV <span>↓</span>
+                            </button>
+                            <div className="d-flex gap-4 align-items-center">
+                                <a href="https://github.com" className="text-white fs-4 social-icon">
+                                    <FaGithub />
+                                </a>
+                                <a href="https://linkedin.com" className="text-white fs-4 social-icon">
+                                    <FaLinkedin />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    {/* Skills kısmı - Mobilde en altta */}
+                    <div className='row mt-0 mt-lg-5 order-3'>
                         <div className="col-lg-7 mt-5">
                             <h5 className="mb-3 text-secondary">Main Skills:</h5>
                             <div className="d-flex gap-4 flex-wrap">
