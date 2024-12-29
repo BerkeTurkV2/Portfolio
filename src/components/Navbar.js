@@ -12,11 +12,11 @@ function Navbar() {
 
     return (
         <nav className="navbar navbar-expand-lg bg-dark">
-            <div className="container">
+            <div className="container mt-1 mt-lg-3 mb-0 mb-lg-4">
                 <a href="/" className="navbar-brand fs-4 fw-bold" style={{ color: '#00995e' }}>BT</a>
                 
                 <button 
-                    className="navbar-toggler" 
+                    className="navbar-toggler me-2" 
                     type="button" 
                     onClick={() => setIsOpen(!isOpen)}
                 >

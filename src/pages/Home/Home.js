@@ -2,6 +2,7 @@ import React from 'react';
 import { FaGithub, FaLinkedin, FaInstagram, FaReact, FaNodeJs, FaJava } from 'react-icons/fa';
 import { SiJavascript, SiMysql, SiSupabase, SiBootstrap, SiFlutter, SiDart, SiFirebase, SiTailwindcss, SiRedux } from 'react-icons/si';
 import './Home.css';
+import '../../styles/variables.css';
 
 import Navbar from '../../components/Navbar';
 
