@@ -106,10 +106,10 @@ function Projects() {
         <div className='min-vh-100 bg-dark text-white'>
             <Navbar />
             <div className='container py-3 py-lg-5'>
-                <div className='row align-items-center'>
+                <div className='row'>
                     {/* Sol Taraf - Proje Bilgileri */}
                     <div className='col-lg-6 mb-4 mb-lg-0'>
-                        <div className='position-relative' style={{ height: '500px'}}>
+                        <div className='position-relative'>
                             <div className='text-with-border'>{projects[currentProject].number}</div>
                             <h2 className='display-5 fw-bold mb-4'>{projects[currentProject].title}</h2>
                             <p className='lead mb-3'>{projects[currentProject].description}</p>
@@ -123,47 +123,48 @@ function Projects() {
                             </div>
                             <div className='border-bottom border-white mb-3'></div>
                             <div className="d-flex gap-3 mt-4">
-                                <a href={projects[currentProject].demoUrl} target="_blank" rel="noopener noreferrer" 
-                                   className="btn btn-outline-light rounded-circle p-2">
+                                <a href={projects[currentProject].demoUrl} target="_blank" rel="noopener noreferrer"
+                                    className="btn btn-outline-light rounded-circle p-2">
                                     <FaSquareArrowUpRight className="fs-3" />
                                 </a>
-                                <a href={projects[currentProject].sourceUrl} target="_blank" rel="noopener noreferrer" 
-                                   className="btn btn-outline-light rounded-circle p-2"
-                                   style={{ border: '1px solid #00995e' }}>
-                                    <FaGithub className="fs-3 my-text-color"/>
+                                <a href={projects[currentProject].sourceUrl} target="_blank" rel="noopener noreferrer"
+                                    className="btn btn-outline-light rounded-circle p-2"
+                                    style={{ border: '1px solid #00995e' }}>
+                                    <FaGithub className="fs-3 my-text-color" />
                                 </a>
                             </div>
                         </div>
                     </div>
 
                     {/* Sağ Taraf - Proje Görseli */}
-                    <div className='col-lg-6 mt-2 mt-lg-0'>
-                        <div className='position-relative' style={{ height: '500px', display: 'flex', alignItems: 'center'}}>
-                            <img
-                                src={projects[currentProject].image}
-                                alt={projects[currentProject].title}
-                                className='img-fluid rounded-5 shadow'
-                            />
+                    <div className='col-lg-6 align-self-center mt-2 mt-lg-0'>
+                        <div className="row">
+                            <div className='position-relative'>
+                                <img
+                                    src={projects[currentProject].image}
+                                    alt={projects[currentProject].title}
+                                    className='img-fluid rounded-5 shadow'
+                                />
+                            </div>
+                            {/* Navigasyon Butonları */}
+                            <div className='d-flex justify-content-end gap-2 mt-3 me-5'>
+                                <button
+                                    onClick={prevProject}
+                                    className='btn btn-success'
+                                    style={{ width: '50px', height: '50px' }}
+                                >
+                                    ←
+                                </button>
+                                <button
+                                    onClick={nextProject}
+                                    className='btn btn-success'
+                                    style={{ width: '50px', height: '50px' }}
+                                >
+                                    →
+                                </button>
+                            </div>
                         </div>
                     </div>
-                </div>
-
-                {/* Navigasyon Butonları */}
-                <div className='d-flex justify-content-end gap-2 mt-2 me-5'>
-                    <button
-                        onClick={prevProject}
-                        className='btn btn-success'
-                        style={{ width: '50px', height: '50px' }}
-                    >
-                        ←
-                    </button>
-                    <button
-                        onClick={nextProject}
-                        className='btn btn-success'
-                        style={{ width: '50px', height: '50px' }}
-                    >
-                        →
-                    </button>
                 </div>
             </div>
         </div>
