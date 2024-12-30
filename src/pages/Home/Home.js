@@ -46,10 +46,12 @@ function Home() {
                                 DOWNLOAD CV <span>↓</span>
                             </button>
                             <div className="d-flex gap-4 align-items-center">
-                                <a href="https://github.com" className="text-white fs-4 social-icon">
+                                <a href="https://github.com/BerkeTurkV2" className="text-white fs-4 social-icon" target="_blank"
+                                    rel="noopener noreferrer">
                                     <FaGithub />
                                 </a>
-                                <a href="https://linkedin.com" className="text-white fs-4 social-icon">
+                                <a href="https://www.linkedin.com/in/berketurk/" className="text-white fs-4 social-icon" target="_blank"
+                                    rel="noopener noreferrer">
                                     <FaLinkedin />
                                 </a>
                             </div>
