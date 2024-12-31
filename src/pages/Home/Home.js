@@ -41,10 +41,15 @@ function Home() {
                         </p>
 
                         <div className="d-flex gap-4 mb-3 mb-lg-5">
-                            <button className="btn btn-outline rounded-pill px-4 py-2 d-flex align-items-center gap-2"
-                                style={{ borderColor: '#00995e', color: '#00995e' }}>
+                            <a
+                                href="/BerkeTurk_Cv.pdf"
+                                download="Berke_Turk_CV.pdf"
+                                className="btn btn-outline rounded-pill px-4 py-2 d-flex align-items-center gap-2"
+                                style={{ borderColor: '#00995e', color: '#00995e' }}
+                            >
                                 DOWNLOAD CV <span>↓</span>
-                            </button>
+                            </a>
+
                             <div className="d-flex gap-4 align-items-center">
                                 <a href="https://github.com/BerkeTurkV2" className="text-white fs-4 social-icon" target="_blank"
                                     rel="noopener noreferrer">
