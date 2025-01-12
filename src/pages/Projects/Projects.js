@@ -1,11 +1,9 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Navbar from '../../components/Navbar';
 import { FaGithub } from 'react-icons/fa';
 import { FaSquareArrowUpRight } from "react-icons/fa6";
 
 function Projects() {
-    const [currentProject, setCurrentProject] = useState(0);
-
     const projects = [
         {
             number: "01",
@@ -94,78 +92,56 @@ function Projects() {
         },
     ];
 
-    const nextProject = () => {
-        setCurrentProject((prev) => (prev === projects.length - 1 ? 0 : prev + 1));
-    };
-
-    const prevProject = () => {
-        setCurrentProject((prev) => (prev === 0 ? projects.length - 1 : prev - 1));
-    };
-
     return (
         <div className='min-vh-100 bg-dark text-white'>
             <Navbar />
             <div className='container py-3 py-lg-5'>
-                <div className='row'>
-                    {/* Sol Taraf - Proje Bilgileri */}
-                    <div className='col-lg-6 mb-4 mb-lg-0'>
-                        <div className='position-relative'>
-                            <div className='text-with-border'>{projects[currentProject].number}</div>
-                            <h2 className='display-5 fw-bold mb-4'>{projects[currentProject].title}</h2>
-                            <p className='lead mb-3'>{projects[currentProject].description}</p>
-                            <p className='lead mb-3'>{projects[currentProject].description2}</p>
-                            <p className='lead mb-3'>{projects[currentProject].description3}</p>
-                            <p className='lead mb-3'>{projects[currentProject].description4}</p>
-                            <div className='mb-4'>
-                                {projects[currentProject].technologies.map((tech, index) => (
-                                    <span key={index} className='badge p-2 my-bg-color me-2'>{tech}</span>
-                                ))}
+                {projects.map((project, index) => (
+                    <>
+                        <div key={index} className='row mb-5 align-items-stretch'>
+                            <div className='col-lg-6 mb-4 mb-lg-0 d-flex flex-column'>
+                                <div className='position-relative flex-grow-1 d-flex flex-column'>
+                                    <div className='text-with-border'>{project.number}</div>
+                                    <h2 className='display-5 fw-bold mb-4'>{project.title}</h2>
+                                    <div className='flex-grow-1'>
+                                        <p className='lead mb-3'>{project.description}</p>
+                                        {project.description2 && <p className='lead mb-3'>{project.description2}</p>}
+                                        {project.description3 && <p className='lead mb-3'>{project.description3}</p>}
+                                        {project.description4 && <p className='lead mb-3'>{project.description4}</p>}
+                                    </div>
+                                    <div>
+                                        <div className='mb-4'>
+                                            {project.technologies.map((tech, techIndex) => (
+                                                <span key={techIndex} className='badge p-2 my-bg-color me-2'>{tech}</span>
+                                            ))}
+                                        </div>
+                                        <div className='border-bottom border-secondary mb-4'></div>
+                                        <div className='d-flex gap-3'>
+                                            <a href={project.sourceUrl} target='_blank' rel='noopener noreferrer' className='text-white text-decoration-none d-flex align-items-center gap-2'>
+                                                <FaGithub size={30} />
+                                                <span>View Code</span>
+                                            </a>
+                                            {project.demoUrl !== "#" && (
+                                                <a href={project.demoUrl} target='_blank' rel='noopener noreferrer' className='text-white text-decoration-none d-flex align-items-center gap-2'>
+                                                    <FaSquareArrowUpRight size={30} />
+                                                    <span>Go to Google Play</span>
+                                                </a>
+                                            )}
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div className='border-bottom border-white mb-3'></div>
-                            <div className="d-flex gap-3 mt-4">
-                                <a href={projects[currentProject].demoUrl} target="_blank" rel="noopener noreferrer"
-                                    className="btn btn-outline-light rounded-circle p-2">
-                                    <FaSquareArrowUpRight className="fs-3" />
-                                </a>
-                                <a href={projects[currentProject].sourceUrl} target="_blank" rel="noopener noreferrer"
-                                    className="btn btn-outline-light rounded-circle p-2"
-                                    style={{ border: '1px solid #00995e' }}>
-                                    <FaGithub className="fs-3 my-text-color" />
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    {/* Sağ Taraf - Proje Görseli */}
-                    <div className='col-lg-6 align-self-center mt-2 mt-lg-0'>
-                        <div className="row">
-                            <div className='position-relative'>
-                                <img
-                                    src={projects[currentProject].image}
-                                    alt={projects[currentProject].title}
-                                    className='img-fluid rounded-5 shadow'
-                                />
-                            </div>
-                            {/* Navigasyon Butonları */}
-                            <div className='d-flex justify-content-end gap-2 mt-3 me-5'>
-                                <button
-                                    onClick={prevProject}
-                                    className='btn btn-success'
-                                    style={{ width: '50px', height: '50px' }}
-                                >
-                                    ←
-                                </button>
-                                <button
-                                    onClick={nextProject}
-                                    className='btn btn-success'
-                                    style={{ width: '50px', height: '50px' }}
-                                >
-                                    →
-                                </button>
+                            <div className='col-lg-6 d-flex align-items-center'>
+                                <img src={project.image} alt={project.title} className='img-fluid rounded-4 w-100' style={{ objectFit: 'contain', height: '100%' }} />
                             </div>
                         </div>
-                    </div>
-                </div>
+                        {index !== projects.length - 1 && (
+                            <div className='my-5'>
+                                <hr className='border-1 border-white opacity-100' />
+                            </div>
+                        )}
+                    </>
+                ))}
             </div>
         </div>
     );
